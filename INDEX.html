@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+        My First ever project
+</title>
+<link rel="StyleSheet" href="INDEX.css">
+</head>
+<body>
+<div class="Heading">
+<h1>My First ever project</h1>
+</div>  
+<div>
+<p>I will change backgroung after clicking.</p>
+</div>
+<button  class="btn" onclick="changeBackground()"   >
+click now
+</button>
+
+<script>
+ const colors= ['red','green','blue','yellow','pink','purple'];
+
+function changeBackground(){
+        const colorIndex=parseInt(Math.random()*colors.length)
+        document.body.style.background=colors[colorIndex];
+
+    }
+
+    </script>
+    
+</body>
+</html>
+
